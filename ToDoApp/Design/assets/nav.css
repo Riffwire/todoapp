@@ -17,12 +17,12 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 .topnav-section {
   height: 100%;
   width: 100%;
-  background-color: var(--appbackground);
   display: flex;
   flex-direction: column;
 }
@@ -32,7 +32,10 @@ body {
   height: 5rem;
   display: flex;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--appbackground);
+
 }
+
 .list-topnav {
   height: 100%;
   width: 100%;
@@ -47,19 +50,26 @@ body {
 .col4 {
   width: 40%;
 }
+
 .list-topnav-items {
   height: 100%;
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
+.list-topnav-items input{
+  border-style:none;
+  width: 50%;
+
+}
 .list-topnav-items a {
   text-decoration: none;
   color: var(--textMainBlue);
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 25px;
   font-style: oblique;
 }
+
 .topnav-btn {
   width: 3rem;
   height: 3rem;
@@ -71,8 +81,8 @@ body {
   border-width: 2px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, transform 0.5s ease;
-  margin: 20px;
 }
+
 .topnav-btn:hover {
   transform: scale(1.1);
 }
@@ -80,23 +90,9 @@ body {
 .topnav-btn img {
   width: 100%;
 }
+
 .topnav-search {
   height: 1.5rem;
   width: 15em;
   border: 1.6px solid black;
-  padding-left: 5%;
-}
-.main-section {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.secoundary-section {
-  height: 100%;
-  width: 70%;
-}
-.secoundary-section-info {
-  height: 100%;
-  width: 30%;
 }
